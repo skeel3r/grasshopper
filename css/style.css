@@ -687,10 +687,6 @@ body.mobile-nav-active #mobile-nav-toggle i {
 /* Screenshots Section
 --------------------------------*/
 
-.owl-carousel {
-  z-index: 0;
-}
-
 .owl-dot.active > span {
   height: 10px !important;
   width: 10px !important;
