@@ -101,15 +101,16 @@ jQuery(document).ready(function($) {
       data: str,
       success: function(msg) {
         // alert(msg);
-        // if (msg == 'ok') {
+        if (msg == 'There was an error while submitting the form. Please try again later') {
+          $("#sendmessage").removeClass("show");
+          $("#errormessage").addClass("show");
+          $('#errormessage').html(msg);
+        } else {
+          alert(msg);
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
-        // } else {
-        //   $("#sendmessage").removeClass("show");
-        //   $("#errormessage").addClass("show");
-        //   $('#errormessage').html(msg);
-        // }
+        }
 
       }
     });
