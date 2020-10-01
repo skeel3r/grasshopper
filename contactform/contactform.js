@@ -101,6 +101,7 @@ jQuery(document).ready(function($) {
       data: str,
       success: function(msg) {
         // alert(msg);
+        console.log("|| message is:", msg)
         if (msg == 'ok') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
