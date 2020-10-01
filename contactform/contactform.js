@@ -102,6 +102,7 @@ jQuery(document).ready(function($) {
       success: function(msg) {
         // alert(msg);
         if (msg == 'ok') {
+          console.log("|| response message is: ", msg);
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
