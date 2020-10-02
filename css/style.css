@@ -1262,9 +1262,9 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 #contact .form #errormessage {
-  color: red;
+  color: #71c55d;
   display: none;
-  border: 1px solid red;
+  border: 1px solid #71c55d;
   text-align: center;
   padding: 15px;
   font-weight: 600;

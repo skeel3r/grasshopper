@@ -101,8 +101,8 @@ jQuery(document).ready(function($) {
       data: str,
       success: function(msg) {
           $("#sendmessage").addClass("show");
-          // $("#errormessage").removeClass("show");
-          // $('.contactForm').find("input, textarea").val("");
+          $("#errormessage").removeClass("show");
+          $('.contactForm').find("input, textarea").val("");
       },
     });
     return false;
