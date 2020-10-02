@@ -100,15 +100,8 @@ jQuery(document).ready(function($) {
       url: action,
       data: str,
       success: function(msg) {
-          $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
-          $('.contactForm').find("input, textarea").val("");
-      },
-      danger: function(msg) {
-        $("#sendmessage").addClass("show");
-        $("#errormessage").removeClass("show");
-        $('#errormessage').html(msg);
       }
+
     });
     return false;
   });
