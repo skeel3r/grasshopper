@@ -100,17 +100,14 @@ jQuery(document).ready(function($) {
       url: action,
       data: str,
       success: function(msg) {
-        // alert(msg);
-        if (msg == 'There was an error while submitting the form. Please try again later') {
-          $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
-          $('#errormessage').html(msg);
-        } else {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
-        }
-
+      },
+      danger: function(msg) {
+        $("#sendmessage").addClass("show");
+        $("#errormessage").removeClass("show");
+        $('#errormessage').html(msg);
       }
     });
     return false;
