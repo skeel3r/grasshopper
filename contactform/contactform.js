@@ -100,8 +100,10 @@ jQuery(document).ready(function($) {
       url: action,
       data: str,
       success: function(msg) {
-      }
-
+          $("#sendmessage").addClass("show");
+          // $("#errormessage").removeClass("show");
+          // $('.contactForm').find("input, textarea").val("");
+      },
     });
     return false;
   });
